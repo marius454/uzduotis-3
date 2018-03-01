@@ -1,3 +1,3 @@
 Pavarde             Vardas              Galutinis-vidurkis            Galutinis-mediana
-Bieliauskas         Marius              8.00                          8.40
-petrauskas          Petras              8.40                          8.80
+Bieliauskas         Marius              7.20                          7.20
+Petrauskas          Petras              5.60                          6.00
