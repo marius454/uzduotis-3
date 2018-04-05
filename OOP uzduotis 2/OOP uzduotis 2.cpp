@@ -61,6 +61,9 @@ int main()
 	std::vector<studentai> stud;
 	std::list<studentai> stud1;
 	std::deque<studentai> stud2;
+	std::vector<studentai> stud3;
+	std::list<studentai> stud4;
+	std::deque<studentai> stud5;
 	unsigned int m = 0, nd = 0;
 	if (nr == 1)
 	{
@@ -130,52 +133,52 @@ int main()
 				stud.push_back(temp);
 				stud1.push_back(temp);
 				stud2.push_back(temp);
+				stud3.push_back(temp);
+				stud4.push_back(temp);
+				stud5.push_back(temp);
 		}
+	}
+	if (nr == 2)
+	{
+		std::cout << std::endl << "1 strategija :" << std::endl;
+
+		std::ifstream fd("kursiokai.txt");
+		if (!fd)
+		{
+			std::cerr << "failas kursiokai.txt neegzistuoja" << std::endl;
+			return 0;
+		}
+		while (!fd.eof())
+		{
+			m++;
+			studentai temp;
+			fd >> temp.pavarde;
+			fd >> temp.vardas;
+			std::string str;
+			getline(fd, str);
+			std::istringstream is(str);
+			unsigned short a;
+			while (is >> a)
+			{
+				if (a <= 10)
+					temp.paz.push_back(a);
+				else
+					std::cerr << "skaicius nera tarp 0 ir 10 todel bus praleidziamas";
+			}
+			temp.egz = temp.paz.back();
+				stud.push_back(temp);
+				stud1.push_back(temp);
+				stud2.push_back(temp);
+				stud3.push_back(temp);
+				stud4.push_back(temp);
+				stud5.push_back(temp);
+		}
+		fd.close();
 	}
 
 	for (unsigned int k = 0; k < 6; k++) {
 		start = high_resolution_clock::now();
 		
-
-		
-
-		if (nr == 2)
-		{
-
-			std::ifstream fd("kursiokai.txt");
-			if (!fd)
-			{
-				std::cerr << "failas kursiokai.txt neegzistuoja" << std::endl;
-				return 0;
-			}
-			while (!fd.eof())
-			{
-				m++;
-				studentai temp;
-				fd >> temp.pavarde;
-				fd >> temp.vardas;
-				std::string str;
-				getline(fd, str);
-				std::istringstream is(str);
-				unsigned short a;
-				while (is >> a)
-				{
-					if (a <= 10)
-						temp.paz.push_back(a);
-					else
-						std::cerr << "skaicius nera tarp 0 ir 10 todel bus praleidziamas";
-				}
-				temp.egz = temp.paz.back();
-				if (k == 0 || k == 3)
-					stud.push_back(temp);
-				else if (k == 1 || k == 4)
-					stud1.push_back(temp);
-				else
-					stud2.push_back(temp);
-			}
-			fd.close();
-		}
-
 
 		if (k == 0)
 		{
@@ -191,15 +194,15 @@ int main()
 		}
 		if (k == 3)
 		{
-			vectorveiksmai2(stud, nr, nd);
+			vectorveiksmai2(stud3, nr, nd);
 		}
 		else if (k == 4)
 		{
-			listveiksmai2(stud1, nr, nd);
+			listveiksmai2(stud4, nr, nd);
 		}
 		else if (k == 5)
 		{
-			dequeveiksmai2(stud2, nr, nd);
+			dequeveiksmai2(stud5, nr, nd);
 		}
 		auto end = high_resolution_clock::now();
 		std::cout << duration<double>(end - start).count() << "s\n";
