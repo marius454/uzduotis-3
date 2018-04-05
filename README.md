@@ -32,3 +32,11 @@ sukūrtą 10000 mokinių faila.
 Vektorių ir dekų laikai beveik tokie patys, o listai su tokio dydzio failu daugiau nei dvigubai greitesni.
 
 ## v1.0
+Daro tą ka darė v0.5 bet atskiria i dvi strategijas. Pagal 1 sstrategiją "galvočiai" ir "vargšiukai" atskiriami i 2 konteinerius.
+Pagal 2 strategija "vargšiukai" atskiriami į atskirą konteinerį ir ištrinami iš studentų konteinerio.
+
+Taip pat sutvarkytas error handling.
+
+Naudojimosi instrukcija: paleidus programa duodami pasirinkimai 1. įvesti duomenis ranka 2. nuskaityti duomenis iš failo 3.
+sukurti nauja faila su pasirinktu skaičiu mokinių. Pasirinkus 1 ar 2 išrašomi kiek laiko užtrunka kiekvienas konteineris su abiem strategijomis . Pasirinkus 3 paklausiama kokio dydžio failą norima sukurti ir įrašius grįžtama prie pradinio pasirinkimo.
+
