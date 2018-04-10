@@ -25,6 +25,15 @@ Kas pakito nuo v0.1:
 (kai yra 100000 mokiniu programa uztrunka virš 2 minučių)
 * Galimybė įvesti iš klaviatūros yra užkomentuota ir neveikia, nes nėra reikalinga tikrinant laika kai skaitoma iš failo.
 
+|Mokinių skaičius |Laikas      |
+|-----------------|------------|
+|10               |0.00920861s |
+|100              |0.0460522s  |
+|1000             |0.706384s   |
+|10000            |7.67177s    |
+|100000           |125.201s    |
+
+
 ## v0.5
 Lyginamas programos greitis naudojant skirtingus konteinerių tipus (vektorius, listus ir dekus). Tikrinama naudojant praeitos programos
 sukūrtą 10000 mokinių faila.
