@@ -56,9 +56,9 @@ Laikai naudojant 100000 mokinių failą:
 
 |Konteineris |1 Strategija|2 Strategija|
 |------------|------------|------------|
-|Vektorius   |4.60497s    |7.03768s    |
-|Listas      |2.49851s    |4.91976s    |
-|Dekas       |2.5689s     |4.72897s    |
+|Vektorius   |4.60497s    |4.31397s    |
+|Listas      |2.49851s    |3.24171s    |
+|Dekas       |2.5689s     |4.32145s    |
 
 **Naudojimosi instrukcija:** paleidus programa duodami pasirinkimai 1. įvesti duomenis ranka 2. nuskaityti duomenis iš failo 3.
 sukurti nauja faila su pasirinktu skaičiu mokinių. Pasirinkus 1 ar 2 išrašomi kiek laiko užtrunka kiekvienas konteineris su abiem strategijomis . Pasirinkus 3 paklausiama kokio dydžio failą norima sukurti ir įrašius grįžtama prie pradinio pasirinkimo.
