@@ -150,7 +150,6 @@ int main()
 		}
 		while (!fd.eof())
 		{
-			m++;
 			studentai temp;
 			fd >> temp.pavarde;
 			fd >> temp.vardas;
@@ -160,10 +159,10 @@ int main()
 			unsigned short a;
 			while (is >> a)
 			{
-				if (a <= 10)
+				//if (a <= 10)
 					temp.paz.push_back(a);
-				else
-					std::cerr << "skaicius nera tarp 0 ir 10 todel bus praleidziamas";
+				/*else
+					std::cerr << "skaicius nera tarp 0 ir 10 todel bus praleidziamas";*/
 			}
 			temp.egz = temp.paz.back();
 				stud.push_back(temp);
@@ -177,7 +176,7 @@ int main()
 	}
 
 	for (unsigned int k = 0; k < 6; k++) {
-		start = high_resolution_clock::now();
+		//start = high_resolution_clock::now();
 		
 
 		if (k == 0)
@@ -204,8 +203,8 @@ int main()
 		{
 			dequeveiksmai2(stud5, nr, nd);
 		}
-		auto end = high_resolution_clock::now();
-		std::cout << duration<double>(end - start).count() << "s\n";
+		/*auto end = high_resolution_clock::now();
+		std::cout << duration<double>(end - start).count() << "s\n";*/
 	}
 	return 0;
 }
