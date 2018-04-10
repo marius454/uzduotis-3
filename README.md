@@ -1,5 +1,11 @@
 # 2 užduotis
 
+## Vertinimas
+
+- Viskas lyg ir nieko, tik dar truksta
+  - cmake/make 
+  - perkelti i header funkcija is main failo
+
 ## v0.1
 Programa leidžia įrašyti mokinio/studento vardą ir atsitiktinai sugeneruoja n pažymiu.
 Tada įrašomas egzamino rezultatas ir išvedamas mokinio/studento galutinis balas.
@@ -14,14 +20,6 @@ Kas pakito nuo v0.1:
 * Galutinis balas rašomas ir vidurkio ir medianos forma.
 
 Šioje versijoje faile dar reikia įrašyti kiek bus mokinių ir kiek nd pažymiu jie turės.
-
-## v0.3
-* Nuskaitaint duomenis iš failo nebereikia įrašyti kiek bus mokiniu ir kiek namu darbu pazymiu
-* Patikrinama ar failas "kursiokai.txt" egzistuoja
-* Nebeleidžia įvesti pažymiu mažesnių už 0 ar didesnių už 10
-
-## v0.4
-* Tikrina programos greitį kai ji sugeneruoja input failus, kurie turi 10, 100, 1000, 10000 ir 100000 mokinių įvestis.
 (kai yra 100000 mokiniu programa uztrunka virš 2 minučių)
 * Galimybė įvesti iš klaviatūros yra užkomentuota ir neveikia, nes nėra reikalinga tikrinant laika kai skaitoma iš failo.
 
@@ -30,6 +28,14 @@ Kas pakito nuo v0.1:
 |10               |0.00920861s |
 |100              |0.0460522s  |
 |1000             |0.706384s   |
+
+## v0.3
+* Nuskaitaint duomenis iš failo nebereikia įrašyti kiek bus mokiniu ir kiek namu darbu pazymiu
+* Patikrinama ar failas "kursiokai.txt" egzistuoja
+* Nebeleidžia įvesti pažymiu mažesnių už 0 ar didesnių už 10
+
+## v0.4
+* Tikrina programos greitį kai ji sugeneruoja input failus, kurie turi 10, 100, 1000, 10000 ir 100000 mokinių įvestis.
 |10000            |7.67177s    |
 |100000           |125.201s    |
 
@@ -47,6 +53,7 @@ sukūrtą 10000 mokinių faila.
 Vektorių ir dekų laikai beveik tokie patys, o listai su tokio dydzio failu daugiau nei dvigubai greitesni.
 
 ## v1.0
+
 Daro tą ką darė v0.5 bet atskiria i dvi strategijas. Pagal 1 sstrategiją "galvočiai" ir "vargšiukai" atskiriami i 2 konteinerius.
 Pagal 2 strategija "vargšiukai" atskiriami į atskirą konteinerį ir ištrinami iš studentų konteinerio.
 
