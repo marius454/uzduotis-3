@@ -3,24 +3,6 @@
 
 #include "stdafx.h"
 using namespace std::chrono;
-void failu_kurimas(int m)
-{
-	std::ofstream fk("kursiokai.txt");
-	int n = 5;
-
-	for (int i = 0; i < m; i++)
-	{
-		std::random_device rd;
-		std::mt19937 mt(rd());
-		std::uniform_int_distribution<int> dist(0, 10);
-		fk << "Pavarde" << i + 1 << " Vardas" << i + 1 << " ";
-		for (int j = 0; j < n + 1; j++)
-			fk << dist(mt) << " ";
-		if (i != m - 1)
-			fk << std::endl;
-	}
-	fk.close();
-}
 
 int main()
 {
