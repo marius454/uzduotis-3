@@ -3,8 +3,8 @@
 ## Vertinimas
 
 - Viskas lyg ir nieko, tik dar truksta
-  - cmake/make - NUKELEM I 3 DARBA PILNAI VEIKIANTY CMAKE
-  - perkelti i header funkcija is main failo - ATLIKTA
+  - cmake/make 
+  - perkelti i header funkcija is main failo
 
 ## v0.1
 Programa leidžia įrašyti mokinio/studento vardą ir atsitiktinai sugeneruoja n pažymiu.
