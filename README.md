@@ -6,6 +6,7 @@ Pakeitimai nuo 2 užduoties v1.0 versijos:
 - Nebėra atskirimo tarp strategijos ir konteineriu programa vykdoma tik pagal pirma strategija su vector
 Optimizavimas:
 su 10000 mokinių failu
+
 |Optimizavimo flagas |Laikas      |
 |--------------------|------------|
 |default             |~3.20s      |
@@ -14,6 +15,7 @@ su 10000 mokinių failu
 |Ox                  |~2.01s      |
 
 su 100000 mokinių failu
+
 |Optimizavimo flagas |Laikas      |
 |--------------------|------------|
 |default             |~36.41s     |
