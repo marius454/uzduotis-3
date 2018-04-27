@@ -4,7 +4,9 @@
 Pakeitimai nuo 2 užduoties v1.0 versijos:
 - Vietoj struct studentui aprasyti naudojamas class objektas
 - Nebėra atskirimo tarp strategijos ir konteineriu programa vykdoma tik pagal pirma strategija su vector
+
 Optimizavimas:
+
 su 10000 mokinių failu
 
 |Optimizavimo flagas |Laikas      |
