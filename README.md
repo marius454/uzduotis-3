@@ -1,3 +1,26 @@
+# 3 užduotis
+
+## v0.1
+Pakeitimai nuo 2 užduoties v1.0 versijos:
+- Vietoj struct studentui aprasyti naudojamas class objektas
+- Nebėra atskirimo tarp strategijos ir konteineriu programa vykdoma tik pagal pirma strategija su vector
+Optimizavimas:
+su 10000 mokinių failu
+|Optimizavimo flagas |Laikas      |
+|--------------------|------------|
+|default             |~3.20s      |
+|O1                  |~2.10s      |
+|O2                  |~1.97s      |
+|Ox                  |~2.01s      |
+
+su 100000 mokinių failu
+|Optimizavimo flagas |Laikas      |
+|--------------------|------------|
+|default             |~36.41s     |
+|O1                  |~22.65s     |
+|O2                  |~22.20s     |
+|Ox                  |~22.10s     |
+
 # 2 užduotis
 
 ## Vertinimas
