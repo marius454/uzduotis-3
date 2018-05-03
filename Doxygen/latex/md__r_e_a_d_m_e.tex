@@ -1,0 +1,164 @@
+\subsection*{v0.\+1}
+
+Pakeitimai nuo 2 užduoties v1.\+0 versijos\+:
+\begin{DoxyItemize}
+\item Vietoj struct studentui aprasyti naudojamas class objektas
+\item Nebėra atskirimo tarp strategijos ir konteineriu programa vykdoma tik pagal pirma strategija su vector
+\end{DoxyItemize}
+
+Optimizavimas\+:
+
+su 10000 mokinių failu
+
+\tabulinesep=1mm
+\begin{longtabu} spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\rowcolor{\tableheadbgcolor}\textbf{ Optimizavimo flagas  }&\textbf{ Laikas   }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\rowcolor{\tableheadbgcolor}\textbf{ Optimizavimo flagas  }&\textbf{ Laikas   }\\\cline{1-2}
+\endhead
+default  &$\sim$3.20s   \\\cline{1-2}
+O1  &$\sim$2.10s   \\\cline{1-2}
+O2  &$\sim$1.97s   \\\cline{1-2}
+Ox  &$\sim$2.01s   \\\cline{1-2}
+\end{longtabu}
+
+
+su 100000 mokinių failu
+
+\tabulinesep=1mm
+\begin{longtabu} spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\rowcolor{\tableheadbgcolor}\textbf{ Optimizavimo flagas  }&\textbf{ Laikas   }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\rowcolor{\tableheadbgcolor}\textbf{ Optimizavimo flagas  }&\textbf{ Laikas   }\\\cline{1-2}
+\endhead
+default  &$\sim$36.41s   \\\cline{1-2}
+O1  &$\sim$22.65s   \\\cline{1-2}
+O2  &$\sim$22.20s   \\\cline{1-2}
+Ox  &$\sim$22.10s   \\\cline{1-2}
+\end{longtabu}
+
+
+\section*{2 užduotis}
+
+\subsection*{Vertinimas}
+
+
+\begin{DoxyItemize}
+\item Viskas lyg ir nieko, tik dar truksta
+\begin{DoxyItemize}
+\item cmake/make
+\item perkelti i header funkcija is main failo
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+\subsection*{v0.\+1}
+
+Programa leidžia įrašyti mokinio/studento vardą ir atsitiktinai sugeneruoja n pažymiu. Tada įrašomas egzamino rezultatas ir išvedamas mokinio/studento galutinis balas.
+
+\subsection*{v0.\+2}
+
+Kas pakito nuo v0.\+1\+:
+
+
+\begin{DoxyItemize}
+\item Galima duomenis įvesti arba iš klaviatūros arba iš tekstinio failo\+:
+\begin{DoxyItemize}
+\item tekstiniame faile iš pradžių parašomi 2 skaičiai -\/ mokinių skaičius ir namų darbų kiekis. Tada iš eilės rašomi studento pavardė, vardas, visi namų darbų balai, egzamino balas ir kartojama kol išrašomi visi studentai.
+\end{DoxyItemize}
+\item Pažymiai nėra random.
+\item Galutiniai balai surašyti abecelės tvarka pagal pavardę.
+\item Galutinis balas rašomas ir vidurkio ir medianos forma.
+\end{DoxyItemize}
+
+Šioje versijoje faile dar reikia įrašyti kiek bus mokinių ir kiek nd pažymiu jie turės. (kai yra 100000 mokiniu programa uztrunka virš 2 minučių)
+\begin{DoxyItemize}
+\item Galimybė įvesti iš klaviatūros yra užkomentuota ir neveikia, nes nėra reikalinga tikrinant laika kai skaitoma iš failo.
+\end{DoxyItemize}
+
+\tabulinesep=1mm
+\begin{longtabu} spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\rowcolor{\tableheadbgcolor}\textbf{ Mokinių skaičius  }&\textbf{ Laikas   }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\rowcolor{\tableheadbgcolor}\textbf{ Mokinių skaičius  }&\textbf{ Laikas   }\\\cline{1-2}
+\endhead
+10  &0.\+00920861s   \\\cline{1-2}
+100  &0.\+0460522s   \\\cline{1-2}
+1000  &0.\+706384s   \\\cline{1-2}
+\end{longtabu}
+
+
+\subsection*{v0.\+3}
+
+
+\begin{DoxyItemize}
+\item Nuskaitaint duomenis iš failo nebereikia įrašyti kiek bus mokiniu ir kiek namu darbu pazymiu
+\item Patikrinama ar failas \char`\"{}kursiokai.\+txt\char`\"{} egzistuoja
+\item Nebeleidžia įvesti pažymiu mažesnių už 0 ar didesnių už 10
+\end{DoxyItemize}
+
+\subsection*{v0.\+4}
+
+
+\begin{DoxyItemize}
+\item Tikrina programos greitį kai ji sugeneruoja input failus, kurie turi 10, 100, 1000, 10000 ir 100000 mokinių įvestis. $\vert$10000 $\vert$7.67177s $\vert$ $\vert$100000 $\vert$125.201s $\vert$
+\end{DoxyItemize}
+
+\subsection*{v0.\+5}
+
+Lyginamas programos greitis naudojant skirtingus konteinerių tipus (vektorius, listus ir dekus). Tikrinama naudojant praeitos programos sukūrtą 10000 mokinių faila.
+
+\tabulinesep=1mm
+\begin{longtabu} spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\rowcolor{\tableheadbgcolor}\textbf{ Konteineris  }&\textbf{ 1 Strategija   }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\rowcolor{\tableheadbgcolor}\textbf{ Konteineris  }&\textbf{ 1 Strategija   }\\\cline{1-2}
+\endhead
+Vektorius  &6.\+90567s   \\\cline{1-2}
+Listas  &2.\+59651s   \\\cline{1-2}
+Dekas  &6.\+8473s   \\\cline{1-2}
+\end{longtabu}
+
+
+Vektorių ir dekų laikai beveik tokie patys, o listai su tokio dydzio failu daugiau nei dvigubai greitesni.
+
+\subsection*{v1.\+0}
+
+Daro tą ką darė v0.\+5 bet atskiria i dvi strategijas. Pagal 1 sstrategiją \char`\"{}galvočiai\char`\"{} ir \char`\"{}vargšiukai\char`\"{} atskiriami i 2 konteinerius. Pagal 2 strategija \char`\"{}vargšiukai\char`\"{} atskiriami į atskirą konteinerį ir ištrinami iš studentų konteinerio.
+
+Taip pat sutvarkytas error handling.
+
+Laikai naudojant 100000 mokinių failą\+:
+
+\tabulinesep=1mm
+\begin{longtabu} spread 0pt [c]{*{3}{|X[-1]}|}
+\hline
+\rowcolor{\tableheadbgcolor}\textbf{ Konteineris  }&\textbf{ 1 Strategija  }&\textbf{ 2 Strategija   }\\\cline{1-3}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\rowcolor{\tableheadbgcolor}\textbf{ Konteineris  }&\textbf{ 1 Strategija  }&\textbf{ 2 Strategija   }\\\cline{1-3}
+\endhead
+Vektorius  &4.\+60497s  &4.\+31397s   \\\cline{1-3}
+Listas  &2.\+49851s  &3.\+24171s   \\\cline{1-3}
+Dekas  &2.\+5689s  &4.\+32145s   \\\cline{1-3}
+\end{longtabu}
+
+
+{\bfseries Naudojimosi instrukcija\+:} paleidus programa duodami pasirinkimai 1. įvesti duomenis ranka 2. nuskaityti duomenis iš failo 3. sukurti nauja faila su pasirinktu skaičiu mokinių. Pasirinkus 1 ar 2 išrašomi kiek laiko užtrunka kiekvienas konteineris su abiem strategijomis . Pasirinkus 3 paklausiama kokio dydžio failą norima sukurti ir įrašius grįžtama prie pradinio pasirinkimo. 

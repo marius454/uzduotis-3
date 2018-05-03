@@ -39,10 +39,10 @@ pradzia:
 		failu_kurimas(sk);
 		goto pradzia;
 	}
-	
+
 	std::vector<studentai> stud;
 
-	unsigned int m = 0, nd = 0;
+	size_t m = 0, nd = 0;
 	if (nr == 1)
 	{
 		std::cout << "iveskite kiek bus vedama mokiniu: ";
@@ -113,8 +113,8 @@ pradzia:
 			} while (bad || temp.egz() > 10);
 			bad = false;
 
-				stud.push_back(temp);
-				vectorveiksmai(stud[i], nd, nr);
+			stud.push_back(temp);
+			vectorveiksmai(stud[i], nd, nr);
 		}
 	}
 	auto start = high_resolution_clock::now();
@@ -146,7 +146,7 @@ pradzia:
 				temp.setPaz(a);
 				s++;
 			}
-			temp.setEgz(temp.paz().at(s-1));
+			temp.setEgz(temp.paz().at(s - 1));
 			stud.push_back(temp);
 			vectorveiksmai(stud[iter], nd, nr);
 			iter++;
