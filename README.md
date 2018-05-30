@@ -1,5 +1,18 @@
 # 3 užduotis
 
+## "Cool dalikėliai"
+
+```c++
+getline(fd, str);
+std::istringstream is(str);
+
+while (is >> a)
+			{
+				temp.setPaz(a);
+				s++;
+			}
+```
+
 ## v0.1
 Pakeitimai nuo 2 užduoties v1.0 versijos:
 - Vietoj struct studentui aprasyti naudojamas class objektas
