@@ -2,9 +2,19 @@
 //
 
 #include "stdafx.h"
+#include <gtest/gtest.h>
+
 using namespace std::chrono;
 
-int main()
+TEST(values, structure_count_test)
+{
+	studentai test;
+	test.setFirstN("vardenis") ;
+
+	EXPECT_EQ("vardenis", test.vardas());
+}
+
+int main(int argc, char* argv[])
 {
 pradzia:
 	unsigned short int nr = 0;
@@ -162,5 +172,8 @@ pradzia:
 		std::cout << duration<double>(end - start).count() << "s\n";
 	}
 
+
+	testing::InitGoogleTest(&argc, argv);
+	return RUN_ALL_TESTS();
 	return 0;
 }
