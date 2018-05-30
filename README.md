@@ -7,10 +7,10 @@ getline(fd, str);
 std::istringstream is(str);
 
 while (is >> a)
-			{
-				temp.setPaz(a);
-				s++;
-			}
+	{
+		temp.setPaz(a);
+		s++;
+	}
 ```
 
 ## v0.1
