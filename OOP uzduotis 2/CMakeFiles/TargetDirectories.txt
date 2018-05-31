@@ -1,0 +1,3 @@
+G:/Programos/C++/Visual studio projects/OOP_uzduotis_3/3_uzduotis/OOP uzduotis 2/CMakeFiles/OOP_uzduotis_3.dir
+G:/Programos/C++/Visual studio projects/OOP_uzduotis_3/3_uzduotis/OOP uzduotis 2/CMakeFiles/ALL_BUILD.dir
+G:/Programos/C++/Visual studio projects/OOP_uzduotis_3/3_uzduotis/OOP uzduotis 2/CMakeFiles/ZERO_CHECK.dir
