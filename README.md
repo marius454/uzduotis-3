@@ -38,6 +38,16 @@ su 100000 mokinių failu
 |O2                  |~22.20s     |
 |Ox                  |~22.10s     |
 
+## v0.2
+
+Prirašyti <<, <, >, == ir != operatiriai ir sukurta Doxygen dokumentacija
+
+Pridėta std::partition realizacija
+
+## v1.0
+
+Padarytas unit test, atnaujintas doxygen, sutvarkytas Cmake.
+
 # 2 užduotis
 
 ## Vertinimas
