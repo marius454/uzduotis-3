@@ -17,7 +17,7 @@ TEST(values, structure_count_test)
 int main(int argc, char* argv[])
 {
 pradzia:
-	unsigned short int nr = 0;
+	unsigned int nr = 0;
 	std::cout << "pasirinkite:" << std::endl;
 	std::cout << "1) ivesti duomenis is klaviaturos" << std::endl;
 	std::cout << "2) nuskaityti duomenis is failo (kursiokai.txt)" << std::endl;
@@ -36,7 +36,7 @@ pradzia:
 	if (nr == 3)
 	{
 		std::cout << "iveskite n: ";
-		unsigned long sk = 0;
+		size_t sk = 0;
 		do {
 			std::cin >> sk;
 
@@ -82,7 +82,7 @@ pradzia:
 		bad = false;
 
 		stud.reserve(m);
-		for (unsigned int i = 0; i < m; i++)
+		for (size_t i = 0; i < m; i++)
 		{
 			studentai temp;
 			std::string p, v;
@@ -93,9 +93,9 @@ pradzia:
 			std::cin >> v;
 			temp.setFirstN(v);
 			std::cout << "iveskite " << i + 1 << "-ojo mokinio(es) " << nd << " namu darbu pazymius:" << std::endl;
-			for (unsigned int j = 0; j < nd; j++)
+			for (size_t j = 0; j < nd; j++)
 			{
-				unsigned short int a;
+				unsigned int a;
 				int test = 0;
 				do {
 					std::cin >> a;
@@ -137,7 +137,7 @@ pradzia:
 			std::cerr << "failas kursiokai.txt neegzistuoja" << std::endl;
 			return 0;
 		}
-		int iter = 0;
+		unsigned int iter = 0;
 		while (!fd.eof())
 		{
 			std::string p, v;
