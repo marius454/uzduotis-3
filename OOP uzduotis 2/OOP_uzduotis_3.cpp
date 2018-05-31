@@ -6,13 +6,25 @@
 
 using namespace std::chrono;
 
-TEST(values, structure_count_test)
+TEST(studentai, structure_vardas_test)
 {
 	studentai test;
 	test.setFirstN("vardenis") ;
 
 	EXPECT_EQ("vardenis", test.vardas());
-}
+};
+
+TEST(studentai, structure_operator_test)
+{
+	studentai test1;
+	studentai test2;
+	test1.setLastN("Pavardenis");
+	test2.setLastN("zPavardenis");
+
+	EXPECT_TRUE(test1 < test2);
+};
+
+
 
 int main(int argc, char* argv[])
 {
