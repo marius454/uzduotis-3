@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['daugiau',['daugiau',['../stdafx_8h.html#a8d518d58b92bc67240cc99d46f49574d',1,'stdafx.h']]],
-  ['dec',['DEC',['../_c_make_c_compiler_id_8c.html#ad1280362da42492bbc11aa78cbf776ad',1,'DEC():&#160;CMakeCCompilerId.c'],['../_c_make_c_x_x_compiler_id_8cpp.html#ad1280362da42492bbc11aa78cbf776ad',1,'DEC():&#160;CMakeCXXCompilerId.cpp']]]
+  ['egz',['egz',['../classstudentai.html#a5bcdc07aacdebaf33b4bfbd6329011b2',1,'studentai']]]
 ];

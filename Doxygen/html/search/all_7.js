@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['info_5farch',['info_arch',['../_c_make_c_compiler_id_8c.html#a59647e99d304ed33b15cb284c27ed391',1,'info_arch():&#160;CMakeCCompilerId.c'],['../_c_make_c_x_x_compiler_id_8cpp.html#a59647e99d304ed33b15cb284c27ed391',1,'info_arch():&#160;CMakeCXXCompilerId.cpp']]],
-  ['info_5fcompiler',['info_compiler',['../_c_make_c_compiler_id_8c.html#a4b0efeb7a5d59313986b3a0390f050f6',1,'info_compiler():&#160;CMakeCCompilerId.c'],['../_c_make_c_x_x_compiler_id_8cpp.html#a4b0efeb7a5d59313986b3a0390f050f6',1,'info_compiler():&#160;CMakeCXXCompilerId.cpp']]],
-  ['info_5flanguage_5fdialect_5fdefault',['info_language_dialect_default',['../_c_make_c_compiler_id_8c.html#a1ce162bad2fe6966ac8b33cc19e120b8',1,'info_language_dialect_default():&#160;CMakeCCompilerId.c'],['../_c_make_c_x_x_compiler_id_8cpp.html#a1ce162bad2fe6966ac8b33cc19e120b8',1,'info_language_dialect_default():&#160;CMakeCXXCompilerId.cpp']]],
-  ['info_5fplatform',['info_platform',['../_c_make_c_compiler_id_8c.html#a2321403dee54ee23f0c2fa849c60f7d4',1,'info_platform():&#160;CMakeCCompilerId.c'],['../_c_make_c_x_x_compiler_id_8cpp.html#a2321403dee54ee23f0c2fa849c60f7d4',1,'info_platform():&#160;CMakeCXXCompilerId.cpp']]],
-  ['isvedimas',['isvedimas',['../stdafx_8h.html#ad9e479a5b2e999b03b4b2ddb2bf0892e',1,'isvedimas(std::vector&lt; studentai &gt; stud):&#160;student.cpp'],['../student_8cpp.html#ad9e479a5b2e999b03b4b2ddb2bf0892e',1,'isvedimas(std::vector&lt; studentai &gt; stud):&#160;student.cpp']]]
+  ['main',['main',['../_c_make_c_compiler_id_8c.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main(int argc, char *argv[]):&#160;CMakeCCompilerId.c'],['../_c_make_c_x_x_compiler_id_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main(int argc, char *argv[]):&#160;CMakeCXXCompilerId.cpp'],['../feature__tests_8cxx.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main(int argc, char **argv):&#160;feature_tests.cxx'],['../_o_o_p__uzduotis__3_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main(int argc, char *argv[]):&#160;OOP_uzduotis_3.cpp']]],
+  ['maziau',['maziau',['../stdafx_8h.html#a404deb4f8c31e7c3811b16ac9be38955',1,'stdafx.h']]],
+  ['med',['med',['../classstudentai.html#ae448b8ec1c5d99c6f6313f7e4a12ed14',1,'studentai']]]
 ];
